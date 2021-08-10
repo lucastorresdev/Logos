@@ -114,7 +114,7 @@ body {
 .card__logo {
   background-color: var(--fondo);
   color: var(--fondo);
-  width: 85%;
+  width: 22rem;
   height: 22rem;
   margin-top: 2rem;
 }
