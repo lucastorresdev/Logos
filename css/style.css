@@ -115,7 +115,7 @@ body {
   background-color: var(--fondo);
   color: var(--fondo);
   width: 85%;
-  height: 100%;
+  height: 22rem;
   margin-top: 2rem;
 }
 
@@ -144,4 +144,87 @@ body {
 .card__boton--spotify:hover {
   background-color: #20e866;
   transform: scale(1.1);
+}
+
+.topBar {
+  transform: rotate(5deg);
+  border: 2rem solid transparent;
+  border-top: 2rem solid var(--negro);
+  border-radius: 47%;
+  height: 10rem;
+  width: 18rem;
+  position: relative;
+  left: 3rem;
+  top: 6rem;
+}
+
+.topBar:before,
+.topBar:after {
+  content: "";
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--negro);
+  position: absolute;
+  border-radius: 50%;
+  top: -0.5rem;
+  left: -0.35rem;
+}
+.topBar:after {
+  left: 12.55rem;
+  background: var(--negro);
+}
+
+.midBar {
+  transform: rotate(5deg);
+  border: 1.7rem solid transparent;
+  border-top: 1.7rem solid var(--negro);
+  border-radius: 47%;
+  height: 10rem;
+  width: 14rem;
+  position: relative;
+  left: 4.2rem;
+}
+
+.midBar:before,
+.midBar:after {
+  content: "";
+  width: 1.6rem;
+  height: 1.6rem;
+  background: var(--negro);
+  position: absolute;
+  border-radius: 50%;
+  top: -0.45rem;
+  left: -0.1rem;
+}
+.midBar:after {
+  left: 9.15rem;
+  background: var(--negro);
+}
+
+.botBar {
+  transform: rotate(5deg);
+  border: 1.4rem solid transparent;
+  border-top: 1.4rem solid var(--negro);
+  border-radius: 47%;
+  height: 10rem;
+  width: 10rem;
+  position: relative;
+  left: 5.5rem;
+  top: -6rem;
+}
+
+.botBar:before,
+.botBar:after {
+  content: "";
+  width: 1.4rem;
+  height: 1.4rem;
+  background: var(--negro);
+  position: absolute;
+  border-radius: 50%;
+  top: -0.35rem;
+  left: -0.1rem;
+}
+.botBar:after {
+  left: 5.9rem;
+  background: var(--negro);
 }
