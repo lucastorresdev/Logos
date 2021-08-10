@@ -3,6 +3,15 @@
   --negro: #18181b;
   --spotify: #1ed760;
   --youtube: #ff0000;
+  --ytboton: #de0000;
+  --facebook: #2174ee;
+
+  --fuenteFacebook: "facebook";
+}
+
+@font-face {
+  font-family: facebook;
+  src: url(/fonts/klavika-bold.otf);
 }
 
 html {
@@ -132,6 +141,7 @@ body {
 .card__logo--spotify:hover {
   background-color: #20e866;
   transform: scale(1.05);
+  cursor: pointer;
 }
 
 .card__boton--spotify {
@@ -145,6 +155,8 @@ body {
   background-color: #20e866;
   transform: scale(1.1);
 }
+
+/* CAJAS INTERNAS */
 
 .topBar {
   transform: rotate(5deg);
@@ -238,15 +250,13 @@ body {
 
 .card__logo--youtube {
   background-color: var(--youtube);
-  border-top-left-radius: 8rem 15rem;
-  border-top-right-radius: 8rem 15rem;
-  border-bottom-left-radius: 8rem 15rem;
-  border-bottom-right-radius: 8rem 15rem;
+  border-radius: 8rem / 15rem;
   height: 15rem;
   margin-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
 }
 
 .triangulo {
@@ -262,4 +272,61 @@ body {
   background-color: var(--youtube);
   color: var(--fondo);
   margin-top: 1rem;
+  transition: all 0.3s;
+}
+
+.card__boton--youtube:hover,
+.card__logo--youtube:hover {
+  background-color: var(--ytboton);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+/* FACEBOOK */
+
+.card__logo--facebook {
+  background: rgb(24, 172, 253);
+  background: linear-gradient(
+    rgba(24, 172, 253, 1) 0%,
+    rgba(0, 98, 224, 1) 100%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.card__logo--facebook p {
+  font-size: 20rem;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 7.6rem;
+  margin-left: 1rem;
+}
+
+.card__logo--facebook:hover {
+  background: rgb(21, 162, 237);
+  background: linear-gradient(
+    rgba(21, 162, 237, 1) 0%,
+    rgba(0, 103, 237, 1) 100%,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card__boton--facebook {
+  font-family: var(--fuenteFacebook);
+  font-size: 4.3rem;
+  background-color: var(--facebook);
+  color: var(--fondo);
+  transition: all 0.3s;
+}
+
+.card__boton--facebook:hover {
+  transform: scale(1.1);
+  background-color: #1a5aba;
 }
