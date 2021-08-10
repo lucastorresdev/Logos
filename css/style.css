@@ -154,15 +154,15 @@ body {
   height: 10rem;
   width: 18rem;
   position: relative;
-  left: 3rem;
+  left: 2.5rem;
   top: 6rem;
 }
 
 .topBar:before,
 .topBar:after {
   content: "";
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 1.85rem;
+  height: 1.85rem;
   background: var(--negro);
   position: absolute;
   border-radius: 50%;
@@ -170,7 +170,7 @@ body {
   left: -0.35rem;
 }
 .topBar:after {
-  left: 12.55rem;
+  left: 12.53rem;
   background: var(--negro);
 }
 
@@ -182,22 +182,22 @@ body {
   height: 10rem;
   width: 14rem;
   position: relative;
-  left: 4.2rem;
+  left: 3.9rem;
 }
 
 .midBar:before,
 .midBar:after {
   content: "";
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 1.65rem;
+  height: 1.65rem;
   background: var(--negro);
   position: absolute;
   border-radius: 50%;
   top: -0.45rem;
-  left: -0.1rem;
+  left: -0.12rem;
 }
 .midBar:after {
-  left: 9.15rem;
+  left: 9.1rem;
   background: var(--negro);
 }
 
@@ -209,7 +209,7 @@ body {
   height: 10rem;
   width: 10rem;
   position: relative;
-  left: 5.5rem;
+  left: 5.3rem;
   top: -6rem;
 }
 
