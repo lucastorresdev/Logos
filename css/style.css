@@ -2,6 +2,7 @@
   --fondo: #f8f8f8;
   --negro: #18181b;
   --spotify: #1ed760;
+  --youtube: #ff0000;
 }
 
 html {
@@ -73,6 +74,9 @@ body {
   text-align: center;
   line-height: 4rem;
   background-color: var(--fondo);
+  font-size: 3rem;
+  font-weight: 600;
+  color: var(--negro);
 }
 
 /* LOGOS */
@@ -131,8 +135,6 @@ body {
 }
 
 .card__boton--spotify {
-  font-size: 3rem;
-  font-weight: 600;
   background-color: var(--spotify);
   color: var(--negro);
   transition: background-color 0.3s;
@@ -225,4 +227,38 @@ body {
 .botBar:after {
   left: 5.9rem;
   background: var(--negro);
+}
+
+/*  YOUTUBE */
+
+.card__section--youtube {
+  gap: 0;
+  justify-content: space-around;
+}
+
+.card__logo--youtube {
+  background-color: var(--youtube);
+  border-top-left-radius: 8rem 15rem;
+  border-top-right-radius: 8rem 15rem;
+  border-bottom-left-radius: 8rem 15rem;
+  border-bottom-right-radius: 8rem 15rem;
+  height: 15rem;
+  margin-top: 2rem;
+}
+
+.triangulo {
+  clip-path: polygon(90% 50%, 0 0, 0 100%);
+  background-color: var(--fondo);
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  bottom: 61.5rem;
+  left: 79rem;
+  transform: scale(1.1);
+}
+
+.card__boton--youtube {
+  background-color: var(--youtube);
+  color: var(--fondo);
+  margin-top: 1rem;
 }
