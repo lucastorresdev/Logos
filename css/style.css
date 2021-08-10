@@ -244,6 +244,9 @@ body {
   border-bottom-right-radius: 8rem 15rem;
   height: 15rem;
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .triangulo {
@@ -251,9 +254,6 @@ body {
   background-color: var(--fondo);
   width: 5rem;
   height: 5rem;
-  position: absolute;
-  bottom: 61.5rem;
-  left: 79rem;
   transform: scale(1.1);
 }
 
