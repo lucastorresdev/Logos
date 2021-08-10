@@ -246,17 +246,6 @@ body {
   margin-top: 2rem;
 }
 
-.triangulo {
-  clip-path: polygon(90% 50%, 0 0, 0 100%);
-  background-color: var(--fondo);
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  bottom: 61.5rem;
-  left: 79rem;
-  transform: scale(1.1);
-}
-
 .card__boton--youtube {
   background-color: var(--youtube);
   color: var(--fondo);
