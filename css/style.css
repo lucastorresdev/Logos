@@ -248,7 +248,7 @@ body {
 
 .triangulo {
   clip-path: polygon(90% 50%, 0 0, 0 100%);
-  background-color: var(--fondo);
+  background-color: var(--youtube);
   width: 5rem;
   height: 5rem;
   position: absolute;
