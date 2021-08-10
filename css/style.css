@@ -254,6 +254,7 @@ body {
   background-color: var(--fondo);
   width: 5rem;
   height: 5rem;
+  margin-left: 1rem;
   transform: scale(1.1);
 }
 
