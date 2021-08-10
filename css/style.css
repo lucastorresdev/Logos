@@ -324,6 +324,7 @@ body {
   background-color: var(--facebook);
   color: var(--fondo);
   transition: all 0.3s;
+  line-height: 4.5rem;
 }
 
 .card__boton--facebook:hover {
