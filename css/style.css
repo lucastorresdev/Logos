@@ -299,11 +299,11 @@ body {
 }
 
 .card__logo--facebook p {
-  font-size: 20rem;
+  font-size: 23rem;
   font-weight: bold;
   margin: 0;
-  margin-top: 7.6rem;
-  margin-left: 1rem;
+  margin-top: 5.4rem;
+  margin-left: 0.5rem;
 }
 
 .card__logo--facebook:hover {
@@ -330,4 +330,81 @@ body {
 .card__boton--facebook:hover {
   transform: scale(1.1);
   background-color: #1a5aba;
+}
+
+.marco-negro {
+  position: absolute;
+  border: 0.8rem solid var(--negro);
+  width: 23rem;
+  height: 23rem;
+  border-radius: 100%;
+}
+/* INSTAGRAM */
+
+.card__logo--instagram {
+  /* background: rgb(255, 120, 5);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 120, 5, 1) 0%,
+    rgba(214, 39, 65, 1) 44%,
+    rgba(186, 23, 142, 1) 66%,
+    rgba(177, 18, 168, 1) 88%,
+    rgba(158, 8, 218, 1) 100%
+  ); EL QUE HICE YO*/
+
+  background: radial-gradient(
+    circle at 33% 100%,
+    #fed373 4%,
+    #f15245 30%,
+    #d92e7f 62%,
+    #9b36b7 85%,
+    #515ecf
+  ); /* EL QUE SAQUE DE INTERNET*/
+  border-radius: 6rem;
+  transition: all 0.3s;
+}
+
+.marco {
+  border: 1.2rem solid var(--fondo);
+  width: 16rem;
+  height: 16rem;
+  border-radius: 5rem;
+  margin: 3rem;
+}
+
+.camara {
+  border: 1.2rem solid var(--fondo);
+  position: absolute;
+  margin: -15rem 7rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 10rem;
+}
+
+.punto {
+  position: absolute;
+  border: 0.8rem solid var(--fondo);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2rem;
+  margin: -16rem 14.5rem;
+}
+
+.card__boton--instagram {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 211, 115, 1) 0%,
+    rgba(241, 82, 69, 1) 35%,
+    rgba(217, 46, 127, 1) 60%,
+    rgba(217, 46, 127, 1) 60%,
+    rgba(155, 54, 183, 1) 83%,
+    rgba(81, 94, 207, 1) 100%
+  );
+  color: var(--fondo);
+  transition: all 0.3s;
+}
+
+.card__boton--instagram:hover,
+.card__logo--instagram:hover {
+  transform: scale(1.1);
 }
