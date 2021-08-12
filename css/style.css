@@ -445,11 +445,11 @@ body {
 
 .g-right {
   background-color: var(--gazul);
-  width: 10rem;
-  height: 4rem;
+  width: 10.5rem;
+  height: 3.5rem;
   position: absolute;
-  margin-left: 7rem;
-  margin-top: 4.95rem;
+  margin-left: 7.3rem;
+  margin-top: 4.4rem;
 }
 
 .g-right--negro {
@@ -460,4 +460,13 @@ body {
   position: absolute;
   margin-left: 8.8rem;
   margin-top: -3.95rem;
+}
+
+.g-borde-oscuro {
+  position: absolute;
+  border: 0.8rem solid var(--negro);
+  width: 23rem;
+  height: 23rem;
+  border-radius: 100%;
+  margin: -4.5rem;
 }
