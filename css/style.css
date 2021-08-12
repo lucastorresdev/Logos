@@ -5,15 +5,23 @@
   --youtube: #ff0000;
   --ytboton: #de0000;
   --facebook: #2174ee;
+  --grojo: #e34133;
+  --gamarilla: #f4b605;
+  --gverde: #31a34f;
+  --gazul: #4081ed;
 
   --fuenteFacebook: "facebook";
+  --fuenteInstagram: "instagram";
 }
 
 @font-face {
   font-family: facebook;
   src: url(/fonts/klavika-bold.otf);
 }
-
+@font-face {
+  font-family: instagram;
+  src: url(/fonts/Billabong.ttf);
+}
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -71,6 +79,17 @@ body {
 .header__parrafo {
   margin: 0;
   color: var(--fondo);
+}
+
+/* FOOTER */
+
+.footer {
+  background: var(--negro);
+  padding: 2rem;
+  bottom: 0;
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 /* BOTONOES */
@@ -350,7 +369,7 @@ body {
     rgba(186, 23, 142, 1) 66%,
     rgba(177, 18, 168, 1) 88%,
     rgba(158, 8, 218, 1) 100%
-  ); EL QUE HICE YO*/
+  ); */
 
   background: radial-gradient(
     circle at 33% 100%,
@@ -359,7 +378,7 @@ body {
     #d92e7f 62%,
     #9b36b7 85%,
     #515ecf
-  ); /* EL QUE SAQUE DE INTERNET*/
+  ); /*EL QUE SAQUE DE INTERNET*/
   border-radius: 6rem;
   transition: all 0.3s;
 }
@@ -402,9 +421,43 @@ body {
   );
   color: var(--fondo);
   transition: all 0.3s;
+  font-family: var(--fuenteInstagram);
+  font-size: 5rem;
+  line-height: 4.6rem;
 }
 
 .card__boton--instagram:hover,
 .card__logo--instagram:hover {
   transform: scale(1.1);
+}
+
+/* GOOGLE */
+
+.card__logo--google {
+  border: 4rem solid transparent;
+  border-top: 4rem solid var(--grojo);
+  border-left: 4rem solid var(--gamarilla);
+  border-bottom: 4rem solid var(--gverde);
+  border-right: 4rem solid var(--gazul);
+  background: var(--negro);
+  border-radius: 100%;
+}
+
+.g-right {
+  background-color: var(--gazul);
+  width: 10rem;
+  height: 4rem;
+  position: absolute;
+  margin-left: 7rem;
+  margin-top: 4.95rem;
+}
+
+.g-right--negro {
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  background-color: var(--negro);
+  width: 8.95rem;
+  height: 8.95rem;
+  position: absolute;
+  margin-left: 8.8rem;
+  margin-top: -3.95rem;
 }
