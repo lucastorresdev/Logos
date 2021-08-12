@@ -9,6 +9,7 @@
   --gamarilla: #f4b605;
   --gverde: #31a34f;
   --gazul: #4081ed;
+  --whatsapp: #00b921;
 
   --fuenteFacebook: "facebook";
   --fuenteInstagram: "instagram";
@@ -369,7 +370,7 @@ body {
     rgba(186, 23, 142, 1) 66%,
     rgba(177, 18, 168, 1) 88%,
     rgba(158, 8, 218, 1) 100%
-  ); */
+  ); EL QUE HICE YO*/
 
   background: radial-gradient(
     circle at 33% 100%,
@@ -381,6 +382,7 @@ body {
   ); /*EL QUE SAQUE DE INTERNET*/
   border-radius: 6rem;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .marco {
@@ -441,6 +443,12 @@ body {
   border-right: 4rem solid var(--gazul);
   background: var(--negro);
   border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.card__logo--google:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .g-right {
@@ -469,4 +477,112 @@ body {
   height: 23rem;
   border-radius: 100%;
   margin: -4.5rem;
+}
+
+.card__boton--google {
+  background: linear-gradient(
+    90deg,
+    var(--grojo),
+    var(--grojo) 15%,
+    var(--gamarilla),
+    var(--gamarilla) 40%,
+    var(--gverde),
+    var(--gverde) 75%,
+    var(--gazul),
+    var(--gazul) 100%
+  );
+  transition: all 0.3s;
+}
+
+.card__boton--google:hover {
+  transform: scale(1.1);
+  background: linear-gradient(
+    90deg,
+    #f04435,
+    #f04435 15%,
+    #f2c64e,
+    #f2c64e 40%,
+    #39bd5c,
+    #39bd5c 75%,
+    #4184f0,
+    #4184f0 100%
+  );
+}
+
+/* WHATSAPP */
+
+.card__logo--whatsapp {
+  background-color: var(--whatsapp);
+  border: 1.7rem solid var(--fondo);
+  border-radius: 100%;
+  transition: all 0.3s;
+}
+
+.card__logo--whatsapp:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.triangulo--whatsapp {
+  clip-path: polygon(48% 31%, 38% 69%, 75% 50%);
+  background: var(--fondo);
+  width: 10rem;
+  height: 10rem;
+  margin: 14rem -3rem;
+  transform: scale(1.4);
+  position: absolute;
+}
+
+.triangulo-verde--whatsapp {
+  clip-path: polygon(48% 31%, 38% 69%, 75% 50%);
+  background: var(--whatsapp);
+  position: absolute;
+  width: 10rem;
+  height: 10rem;
+  margin: 12.6rem -1.5rem;
+  transform: scale(0.9) rotate(2deg);
+}
+
+.telefono-curva {
+  border: 2rem solid transparent;
+  border-left: 2rem solid var(--fondo);
+  width: 10rem;
+  height: 12rem;
+  position: absolute;
+  border-radius: 100%;
+  margin: 1.2rem 6.4rem;
+  transform: scale(1.2) rotate(-50deg);
+}
+
+.telefono-curva:before {
+  content: "";
+  background-color: var(--youtube);
+  clip-path: polygon(
+    27% 38%,
+    34% 29%,
+    48% 43%,
+    38% 53%,
+    57% 72%,
+    69% 62%,
+    83% 72%,
+    75% 82%,
+    26.5% 47.5%
+  );
+  width: 10rem;
+  height: 8rem;
+  position: absolute;
+  background: var(--fondo);
+  transform: scale(1.6) rotate(60deg);
+  margin-top: -1rem;
+  margin-left: -3.8rem;
+}
+
+.card__boton--whatsapp {
+  background-color: var(--whatsapp);
+  transition: all 0.3s;
+}
+
+.card__boton--whatsapp:hover {
+  transform: scale(1.1);
+  background: #00e32a;
 }
