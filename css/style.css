@@ -586,3 +586,77 @@ body {
   transform: scale(1.1);
   background: #00e32a;
 }
+
+/* GMAIL */
+
+.card__section--gmail {
+  justify-content: space-around;
+}
+
+.card__logo--gmail {
+  border-radius: 2rem;
+  border-left: 4.5rem solid var(--gazul);
+  border-right: 4.5rem solid var(--gverde);
+  background-color: transparent;
+  height: 18rem;
+  margin-top: 2rem;
+  transition: all 0.3s;
+}
+
+.card__logo--gmail:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.card__logo--gmail:after {
+  content: "";
+  background: rgba(227, 65, 51, 0.9);
+  height: 9.8rem;
+  width: 5.7rem;
+  position: absolute;
+  transform: skew(30deg, 0deg) rotate(-60deg);
+  margin: 0rem -1.7rem;
+}
+.card__logo--gmail:before {
+  content: "";
+  background: rgba(227, 65, 51, 0.9);
+  height: 9.8rem;
+  width: 5.7rem;
+  position: absolute;
+  transform: skew(-30deg, 0deg) rotate(60deg);
+  margin: 0rem 9.6rem;
+}
+
+.marco-negro--gmail {
+  height: 19rem;
+  width: 25.39rem;
+  position: absolute;
+  margin: -0.5rem -6.15rem;
+  background: transparent;
+  border: 1.6rem solid var(--negro);
+  border-radius: 2.5rem;
+  z-index: 1;
+}
+
+.marco-negro--gmail::before {
+  content: "";
+  clip-path: polygon(52% 100%, 0 79%, 100% 79%);
+  background: var(--negro);
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  margin: -16.3rem 1rem;
+}
+
+.esquina-amarilla {
+  clip-path: polygon(0 0, 100% 0, 100% 51%, 0% 76%);
+  background: var(--gamarilla);
+  width: 4.6rem;
+  height: 8rem;
+  position: absolute;
+  margin: 1.1rem 13rem;
+}
+
+.card__boton--gmail {
+  margin-top: -3rem;
+}
