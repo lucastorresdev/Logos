@@ -10,6 +10,7 @@
   --gverde: #31a34f;
   --gazul: #4081ed;
   --whatsapp: #00b921;
+  --marlboro: #c00000;
 
   --fuenteFacebook: "facebook";
   --fuenteInstagram: "instagram";
@@ -22,6 +23,10 @@
 @font-face {
   font-family: instagram;
   src: url(/fonts/Billabong.ttf);
+}
+@font-face {
+  font-family: marlboro;
+  src: url(/fonts/Marlboro.ttf);
 }
 html {
   box-sizing: border-box;
@@ -659,4 +664,57 @@ body {
 
 .card__boton--gmail {
   margin-top: -3rem;
+}
+
+/* MARLBORO */
+
+.card__logo--marlboro {
+  width: 70%;
+  background-color: var(--marlboro);
+  font-family: "marlboro", sans-serif;
+  font-size: 5rem;
+  transition: all 0.3s;
+}
+.card__logo--marlboro:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-color: #ed0000;
+}
+
+.card__marlboro {
+  z-index: 30;
+  position: absolute;
+  color: var(--negro);
+  margin: 13rem 1.8rem;
+}
+
+.card__barra {
+  background-color: var(--marlboro);
+  width: 18.6rem;
+  height: 0.7rem;
+  z-index: 20;
+  position: absolute;
+  margin-top: 20.8rem;
+}
+
+.card__fondo-blanco {
+  clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
+  background-color: var(--fondo);
+  width: 18.6rem;
+  height: 18rem;
+  margin: 4rem 0rem;
+  z-index: 10;
+  position: absolute;
+}
+
+.card__boton--marlboro {
+  background-color: var(--marlboro);
+  font-family: "marlboro", sans-serif;
+  font-size: 4.5rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+.card__boton--marlboro:hover {
+  transform: scale(1.1);
+  background-color: #ed0000;
 }
