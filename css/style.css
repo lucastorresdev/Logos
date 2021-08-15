@@ -684,9 +684,13 @@ body {
 
 .card__marlboro {
   z-index: 30;
-  position: absolute;
   color: var(--negro);
   margin: 13rem 2rem;
+}
+
+.marlboro-flex {
+  display: flex;
+  justify-content: center;
 }
 
 .card__barra {
@@ -694,7 +698,8 @@ body {
   width: 100%;
   height: 0.7rem;
   z-index: 20;
-  margin-top: 20.8rem;
+  position: absolute;
+  margin: -10.8rem 0;
 }
 
 .card__fondo-blanco {
@@ -702,9 +707,8 @@ body {
   background-color: var(--fondo);
   width: 100%;
   height: 18rem;
-  margin: 4rem 0rem;
   z-index: 10;
-  margin: -17.5rem 0;
+  margin: -27.8rem 0;
 }
 
 .card__boton--marlboro {
