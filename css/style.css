@@ -674,6 +674,7 @@ body {
   font-family: "marlboro", sans-serif;
   font-size: 5rem;
   transition: all 0.3s;
+  position: relative;
 }
 .card__logo--marlboro:hover {
   transform: scale(1.1);
@@ -685,26 +686,25 @@ body {
   z-index: 30;
   position: absolute;
   color: var(--negro);
-  margin: 13rem 1.8rem;
+  margin: 13rem 2rem;
 }
 
 .card__barra {
   background-color: var(--marlboro);
-  width: 18.6rem;
+  width: 100%;
   height: 0.7rem;
   z-index: 20;
-  position: absolute;
   margin-top: 20.8rem;
 }
 
 .card__fondo-blanco {
   clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%);
   background-color: var(--fondo);
-  width: 18.6rem;
+  width: 100%;
   height: 18rem;
   margin: 4rem 0rem;
   z-index: 10;
-  position: absolute;
+  margin: -17.5rem 0;
 }
 
 .card__boton--marlboro {
