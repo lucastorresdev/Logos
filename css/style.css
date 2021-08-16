@@ -11,6 +11,9 @@
   --gazul: #4081ed;
   --whatsapp: #00b921;
   --marlboro: #c00000;
+  --pepsirojo: #ec1230;
+  --pepsiazul: #3c68ae;
+  --atari: #e5141e;
 
   --fuenteFacebook: "facebook";
   --fuenteInstagram: "instagram";
@@ -561,7 +564,6 @@ body {
 
 .telefono-curva:before {
   content: "";
-  background-color: var(--youtube);
   clip-path: polygon(
     27% 38%,
     34% 29%,
@@ -726,7 +728,7 @@ body {
 /* PEPSI */
 
 .card__logo--pepsi {
-  background-color: #345883;
+  background-color: var(--pepsiazul);
   height: 25rem;
   width: 25rem;
   border-radius: 50%;
@@ -743,7 +745,7 @@ body {
 
 .card__logo--pepsi::after {
   border-radius: 50%;
-  background-color: #da473c;
+  background-color: var(--pepsirojo);
   height: 45rem;
   width: 45rem;
   content: "";
@@ -762,4 +764,98 @@ body {
   transform: rotate(-15deg);
   top: -14rem;
   left: -24rem;
+}
+
+.card__boton--pepsi {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ec1230+0,ec1230+35,ffffff+50,3c68ae+65,3c68ae+100 */
+  background: rgb(236, 18, 48); /* Old browsers */
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(236, 18, 48, 1) 0%,
+    rgba(236, 18, 48, 1) 35%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(60, 104, 174, 1) 65%,
+    rgba(60, 104, 174, 1) 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(236, 18, 48, 1) 0%,
+    rgba(236, 18, 48, 1) 35%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(60, 104, 174, 1) 65%,
+    rgba(60, 104, 174, 1) 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    135deg,
+    rgba(236, 18, 48, 1) 0%,
+    rgba(236, 18, 48, 1) 35%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(60, 104, 174, 1) 65%,
+    rgba(60, 104, 174, 1) 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec1230', endColorstr='#3c68ae',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  transition: all 0.3s;
+}
+
+.card__boton--pepsi:hover {
+  transform: scale(1.1);
+}
+
+/* ATARI */
+
+.card__logo--atari {
+  background-color: var(--atari);
+  overflow: hidden;
+  position: relative;
+  height: 20rem;
+  border-radius: 0.4rem;
+  transition: all 0.3s;
+  margin-top: 3rem;
+}
+
+.card__logo--atari:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #ff1723;
+}
+
+.central {
+  height: 22rem;
+  width: 3rem;
+  background-color: var(--fondo);
+  position: absolute;
+  right: 9.4rem;
+}
+
+.izquierda {
+  width: 25rem;
+  height: 35rem;
+  background-color: transparent;
+  position: absolute;
+  left: -16.1rem;
+  bottom: 0rem;
+  border-radius: 40%;
+  border: 3rem solid #fff;
+}
+
+.derecha {
+  width: 25rem;
+  height: 35rem;
+  background-color: transparent;
+  position: absolute;
+  right: -16.3rem;
+  bottom: 0rem;
+  border-radius: 40%;
+  border: 3rem solid #fff;
+}
+
+.card__boton--atari {
+  background-color: var(--atari);
+  transition: all 0.3s;
+  margin-top: 2rem;
+}
+
+.card__boton--atari:hover {
+  transform: scale(1.1);
+  background-color: #ff1723;
 }
