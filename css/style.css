@@ -14,6 +14,7 @@
   --pepsirojo: #ec1230;
   --pepsiazul: #3c68ae;
   --atari: #e5141e;
+  --react: #61dafb;
 
   --fuenteFacebook: "facebook";
   --fuenteInstagram: "instagram";
@@ -729,8 +730,8 @@ body {
 
 .card__logo--pepsi {
   background-color: var(--pepsiazul);
-  height: 25rem;
-  width: 25rem;
+  height: 22rem;
+  width: 22rem;
   border-radius: 50%;
   overflow: hidden;
   position: relative;
@@ -763,7 +764,7 @@ body {
   background-color: #fff;
   transform: rotate(-15deg);
   top: -14rem;
-  left: -24rem;
+  left: -26.5rem;
 }
 
 .card__boton--pepsi {
@@ -803,6 +804,10 @@ body {
 
 /* ATARI */
 
+.card__section--atari {
+  gap: 3rem;
+}
+
 .card__logo--atari {
   background-color: var(--atari);
   overflow: hidden;
@@ -810,7 +815,7 @@ body {
   height: 20rem;
   border-radius: 0.4rem;
   transition: all 0.3s;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .card__logo--atari:hover {
@@ -852,10 +857,90 @@ body {
 .card__boton--atari {
   background-color: var(--atari);
   transition: all 0.3s;
-  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .card__boton--atari:hover {
   transform: scale(1.1);
   background-color: #ff1723;
+}
+
+/* REACT */
+
+.card__logo--react {
+  position: relative;
+  background-color: var(--negro);
+  transition: all 0.3s;
+}
+
+.card__logo--react:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.punto-react {
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--react);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.ovalo-central {
+  position: absolute;
+  width: 22.2rem;
+  height: 10rem;
+  background-color: transparent;
+  border: 1rem solid var(--react);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.ovalo-izq {
+  position: absolute;
+  width: 22.2rem;
+  height: 10rem;
+  background-color: transparent;
+  border: 1rem solid var(--react);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(60deg);
+}
+
+.ovalo-der {
+  position: absolute;
+  width: 22.2rem;
+  height: 10rem;
+  background-color: transparent;
+  border: 1rem solid var(--react);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(120deg);
+}
+
+.card__boton--react {
+  background-color: var(--react);
+  transition: all 0.3s;
+}
+
+.card__boton--react:hover {
+  transform: scale(1.1);
+  background-color: #5ac9e8;
 }
